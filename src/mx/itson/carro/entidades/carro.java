@@ -4,6 +4,8 @@
  */
 package mx.itson.carro.entidades;
 
+import mx.itson.carro.envm.TipoMotor;
+
 /**
  *
  * @author alumnog
@@ -70,6 +72,7 @@ public class carro {
     private int año;
     private String marca;
     private double kilometraje;
+    private TipoMotor tipoMotor;
     
     /**
      * Calcula el tiempo que tarda el carro en recorrer una distancia.
@@ -87,6 +90,10 @@ public class carro {
     
     //retunr distancia / velocidad;
    }
+
+    public void setTipoMotor(TipoMotor tipoMotor) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
    
 
-}
+} 
