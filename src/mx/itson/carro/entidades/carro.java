@@ -4,6 +4,7 @@
  */
 package mx.itson.carro.entidades;
 
+import mx.itson.carro.envm.TipoCajaCambio;
 import mx.itson.carro.envm.TipoMotor;
 
 /**
@@ -73,6 +74,7 @@ public class carro {
     private String marca;
     private double kilometraje;
     private TipoMotor tipoMotor;
+    private TipoCajaCambio tipoCajaCambio;
     
     /**
      * Calcula el tiempo que tarda el carro en recorrer una distancia.
@@ -92,6 +94,10 @@ public class carro {
    }
 
     public void setTipoMotor(TipoMotor tipoMotor) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public void setTipoCajaCambio(TipoCajaCambio tipoCajaCambio) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
    
