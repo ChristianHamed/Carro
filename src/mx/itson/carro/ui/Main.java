@@ -5,9 +5,11 @@
 package mx.itson.carro.ui;
 
 import java.util.Scanner;
+import mx.itson.carro.entidades.EquipoSonido;
+import mx.itson.carro.entidades.Propietario;
 import mx.itson.carro.entidades.carro;
-import mx.itson.carro.envm.TipoCajaCambio;
-import mx.itson.carro.envm.TipoMotor;
+//import mx.itson.carro.envm.TipoCajaCambio;
+//import mx.itson.carro.envm.TipoMotor;
 
 
 
@@ -33,15 +35,30 @@ public class Main {
     bmw.setColor("Negro");
     bmw.setAño(2021);
     bmw.setKilometraje(10000);
-    bmw.setTipoMotor(TipoMotor.HIBRIDO);
-    bmw.setTipoCajaCambio(TipoCajaCambio.ESTANDAR);
+    //bmw.setTipoMotor(TipoMotor.HIBRIDO);
+    //bmw.setTipoCajaCambio(TipoCajaCambio.ESTANDAR);
             
+    Propietario prop = new Propietario();
+    prop.setNombre ("Eduardo Vargas Luna");
+    prop.setDomicilio ("Calle 23 colonia cengro");
+    prop.setTelefono("6221734422");
+    prop.setEmail("eduardo_vargas@gmail.com");
+    
+    bmw.setPropietario(prop);
+    
     /*carro bmw = new carro();
     bmw.marca = "BMW";
     bmw.color = "Negro";
     bmw.año = 2022;
     */       
+   
+    EquipoSonido e = new EquipoSonido();
+    e.setMarca("Sony");
+    e.setPrecio(5000);
+    e.setTieneBluetooth(true);
+    e.setMusica("Corridos tumbados con Kalimba");
     
+    bmw.setEstereo(e);
     
     //Inocamos al metodo contenido en la clase Carro
     double tiempo = bmw.calcularTiempo(distancia, velocidad);
@@ -51,7 +68,9 @@ public class Main {
             " de color " + bmw.getColor() +
             " y cuyo modelo es " + bmw.getAño() +
             " sera " + tiempo + 
-            " y ahora su kilometraje es de " + bmw.getKilometraje());
+            " y ahora su kilometraje es de " + bmw.getKilometraje() +
+            ". El propietario de este carro es " + bmw.getPropietario().getNombre()
+    + " y esta escuchando " + bmw.getEstereo(). getMusica());
     
     
     

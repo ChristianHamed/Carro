@@ -14,6 +14,34 @@ import mx.itson.carro.envm.TipoMotor;
 public class carro {
 
     /**
+     * @return the estereo
+     */
+    public EquipoSonido getEstereo() {
+        return estereo;
+    }
+
+    /**
+     * @param estereo the estereo to set
+     */
+    public void setEstereo(EquipoSonido estereo) {
+        this.estereo = estereo;
+    }
+
+    /**
+     * @return the propietario
+     */
+    public Propietario getPropietario() {
+        return propietario;
+    }
+
+    /**
+     * @param propietario the propietario to set
+     */
+    public void setPropietario(Propietario propietario) {
+        this.propietario = propietario;
+    }
+
+    /**
      * @return the kilometraje
      */
     public double getKilometraje() {
@@ -75,6 +103,10 @@ public class carro {
     private double kilometraje;
     private TipoMotor tipoMotor;
     private TipoCajaCambio tipoCajaCambio;
+    private Propietario propietario;
+    private EquipoSonido estereo;
+    
+    
     
     /**
      * Calcula el tiempo que tarda el carro en recorrer una distancia.
